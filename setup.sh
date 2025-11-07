@@ -5,7 +5,7 @@
 
 set -e
 
-echo "🚀 Setting up Laundry Delivery App..."
+echo " Setting up Laundry Delivery App..."
 
 # Colors for output
 RED='\033[0;31m'
@@ -143,31 +143,31 @@ run_migrations() {
 # Display setup information
 display_info() {
     echo ""
-    echo "🎉 Laundry App Setup Complete!"
+    echo " Laundry App Setup Complete!"
     echo ""
-    echo "📋 Service Information:"
+    echo " Service Information:"
     echo "  • PostgreSQL Database: localhost:5432"
     echo "  • Redis Cache: localhost:6379"
     echo "  • User Service: localhost:3001"
     echo "  • API Documentation: http://localhost:3001/api-docs"
     echo ""
-    echo "🔧 Next Steps:"
+    echo " Next Steps:"
     echo "  1. Configure your environment variables in backend/user-service/.env"
     echo "  2. Set up your email service (SMTP) for verification emails"
     echo "  3. Configure Stripe for payment processing"
     echo "  4. Set up Google Maps API for location services"
     echo "  5. Configure Twilio for SMS notifications"
     echo ""
-    echo "🚀 To start all services:"
+    echo " To start all services:"
     echo "  docker-compose up -d"
     echo ""
-    echo "🛑 To stop all services:"
+    echo " To stop all services:"
     echo "  docker-compose down"
     echo ""
-    echo "📊 To view logs:"
+    echo " To view logs:"
     echo "  docker-compose logs -f user-service"
     echo ""
-    echo "🔍 Health Check:"
+    echo " Health Check:"
     echo "  curl http://localhost:3001/health"
     echo ""
 }
